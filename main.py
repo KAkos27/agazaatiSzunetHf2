@@ -1,0 +1,3 @@
+import sorozat
+
+sorozat.elso()
