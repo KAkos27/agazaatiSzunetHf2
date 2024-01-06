@@ -20,7 +20,6 @@ def fajl_beolvasas():
             sor_lista[5],
         )
         epuletek.append(epulet)
-
     return epuletek
 
 
@@ -35,3 +34,14 @@ def magas(lista):
         if lab_meter > 555:
             osszegzo += 1
     return osszegzo
+
+
+def legoregebb(lista):
+    minimum = 3000
+    legoregebb_index = 0
+    for i in range(0, len(lista), 1):
+        if int(lista[i].epult) < minimum:
+            minimum = int(lista[i].epult)
+            legoregebb_index = i
+
+    return lista[legoregebb_index].orszag
