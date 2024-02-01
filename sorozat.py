@@ -37,3 +37,4 @@ def konzol_kiir(fejszam):
 def file_kiir(fejszam):
     fajl = open("fejek.txt", "w", encoding="utf-8")
     fajl.write(f"A fejek száma: {fejszam}.")
+
